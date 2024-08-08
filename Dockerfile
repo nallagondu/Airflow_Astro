@@ -57,5 +57,6 @@ COPY requirements.txt .
 
 # Install Python dependencies with SSL verification disabled
 RUN python -m pip install --trusted-host pip.astronomer.io -r requirements.txt
+RUN pip install scikit-learn==1.3.2
 
 
